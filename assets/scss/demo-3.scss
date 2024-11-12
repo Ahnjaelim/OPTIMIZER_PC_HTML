@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------------------------------------
+
+    Item Name: Finx - Admin & Dashboard HTML Template..
+    Author: Maraviya Infotech
+    Version: 1.0
+    Copyright 2023
+
+-----------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------
+    Included CSS INDEX
+-----------------------------------------------------------------------------------
+
+01. Typography
+02. Components
+    - Common
+    - Sidebar
+    - Header
+    - Footer
+    - Notify-bar
+    - Tools-sidebar
+
+03. Layout 
+    - Cards
+    - All-chart
+    - Tables
+    - Event-calendar
+
+04. Pages
+    - Shop Page
+    - Chatapp-page
+    - Todo-page
+    - Team-pages
+    - Widget-page
+    - Ecommerce-page
+    - Auth-pages
+    - Project-pages
+    - Vendor-pages
+    - Buttons-page
+    - Accordion-page
+    - Alert-popup-page
+    - Role-page
+    - Ai-chat
+    - Calendar
+
+-----------------------------------------------------------------------------------*/
+
+// Typography
+@import "base/_typography";
+
+// Utilities
+@import "utilities/_variables";
+@import "utilities/_mixins";
+
+// Components
+@import "components/_common";
+@import "components/_header-3";
+@import "components/_footer-3";
+@import "components/_notify-bar";
+@import "components/_tools-sidebar";
+
+// Layouts
+@import "layouts/_cards";
+@import "layouts/_all-chart";
+@import "layouts/_tables";
+@import "layouts/_event-calendar";
+
+// Pages
+@import "pages/_chatapp-page";
+@import "pages/_todo-page";
+@import "pages/_team-pages";
+@import "pages/_widget-page";
+@import "pages/_ecommerce-page";
+@import "pages/_auth-pages";
+@import "pages/_project-pages";
+@import "pages/_vendor-pages";
+@import "pages/_buttons-page";
+@import "pages/_accordion-page";
+@import "pages/_alert-popup-page";
+@import "pages/_role-page";
+@import "pages/_ai-chat";
+@import "pages/_calendar";

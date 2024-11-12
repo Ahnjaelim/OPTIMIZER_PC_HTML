@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="admin, dashboard, crm, analytics, ecommerce, team, vendor, ai chat bot, backend, panel">
+    <meta name="description" content="Finx - Best multipurpose admin dashboard template.">
+    <meta name="author" content="Maraviya Infotech">
+
+	<title>Finx - Admin & Dashboard HTML Template.</title>
+
+	<!-- App favicon -->
+	<link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+
+	<!-- Icon CSS -->
+	<link href="assets/css/vendor/materialdesignicons.min.css" rel="stylesheet">
+	<link href="assets/css/vendor/remixicon.css" rel="stylesheet">
+
+	<!-- Vendor CSS -->
+	<link href='assets/css/vendor/datatables.bootstrap5.min.css' rel='stylesheet'>
+	<link href='assets/css/vendor/responsive.datatables.min.css' rel='stylesheet'>
+	<link href='assets/css/vendor/daterangepicker.css' rel='stylesheet'>
+	<link href="assets/css/vendor/simplebar.css" rel="stylesheet">
+	<link href="assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/vendor/apexcharts.css" rel="stylesheet">
+	<link href="assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+
+	<!-- Main CSS -->
+	<link id="mainCss" href="assets/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/dark.css" id="dark">
+
+</head>
+
+<body data-fx-mode="dark">
+	<main class="wrapper sb-collapse">
+		<!-- Loader -->
+		<div id="fx-overlay">
+			<div class="fx-ellipsis">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		
+		<!-- Header -->
+		<header class="fx-header">
+			<div class="container-fluid">
+				<div class="fx-header-items">
+					<div class="left-header">
+					</div>
+					<div class="right-header">
+						<div class="fx-right-tool apps">
+							<div class="fx-hover-drop">
+								<div class="fx-hover-tool">
+									<i class="ri-apps-2-line"></i>
+								</div>
+								<div class="fx-hover-drop-panel right apps">
+									<h6 class="title">Apps</h6>
+									<ul>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/1.png"
+													alt="flag">English</a></li>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/2.png"
+													alt="flag">Hindi</a></li>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/3.png"
+													alt="flag"> Deutsch</a></li>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/4.png"
+													alt="flag">Italian</a></li>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/5.png"
+													alt="flag">Japanese</a></li>
+										<li><a href="javascript:void(0)"><img class="app" src="assets/img/apps/6.png"
+													alt="flag">Japanese</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="fx-right-tool display-screen">
+							<a class="fx-screen full" href="javascript:void(0)"><i class="ri-fullscreen-line"></i></a>
+							<a class="fx-screen reset" href="javascript:void(0)"><i
+									class="ri-fullscreen-exit-line"></i></a>
+						</div>
+						<div class="fx-right-tool">
+							<a class="fx-notify" href="javascript:void(0)">
+								<i class="ri-notification-2-line"></i>
+								<span class="label"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- sidebar -->
+		<div class="fx-sidebar-overlay"></div>
+		<div class="fx-sidebar" data-mode="dark">
+			<div class="fx-sb-logo">
+				<a href="index.html" class="sb-full"><img src="assets/img/logo/full-logo.png" alt="logo"></a>
+				<a href="index.html" class="sb-collapse"><img src="assets/img/logo/collapse-logo.png" alt="logo"></a>
+			</div>
+			<div class="fx-sb-wrapper">
+				<div class="fx-sb-content">
+					<ul class="fx-sb-list">
+						<li class="fx-sb-item sb-drop-item">
+							<a href="javascript:void(0)" class="fx-drop-toggle">
+								<i class="ri-home-2-fill"></i>
+							</a>
+						</li>
+						<li class="fx-sb-item sb-drop-item">
+							<a href="javascript:void(0)" class="fx-drop-toggle">
+								<i class="ri-history-fill"></i>
+							</a>
+						</li>
+						<li class="fx-sb-item sb-drop-item">
+							<a href="javascript:void(0)" class="fx-drop-toggle">
+								<i class="ri-questionnaire-fill"></i>
+							</a>
+						</li>
+						<li class="fx-sb-item sb-drop-item">
+							<a href="javascript:void(0)" class="fx-drop-toggle">
+								<i class="ri-settings-3-fill"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Notify sidebar -->
+		<div class="fx-notify-bar-overlay"></div>
+		<div class="fx-notify-bar">
+			<div class="fx-bar-title">
+				<h6>Notifications<span class="label">12</span></h6>
+				<a href="javascript:void(0)" class="close-notify"><i class="ri-close-line"></i></a>
+			</div>
+			<div class="fx-bar-content">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active" id="alert-tab" data-bs-toggle="tab" data-bs-target="#alert"
+							type="button" role="tab" aria-controls="alert" aria-selected="true">Alert</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"
+							type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="log-tab" data-bs-toggle="tab" data-bs-target="#log" type="button"
+							role="tab" aria-controls="log" aria-selected="false">Log</button>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="alert" role="tabpanel" aria-labelledby="alert-tab">
+						<div class="fx-alert-list">
+							<ul>
+								<li>
+									<div class="icon fx-alert">
+										<i class="ri-alarm-warning-line"></i>
+									</div>
+									<div class="detail">
+										<div class="title">Your final report is overdue</div>
+										<p class="time">Just now</p>
+										<p class="message">Please submit your quarterly report before - June 15.</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon fx-warn">
+										<i class="ri-error-warning-line"></i>
+									</div>
+									<div class="detail">
+										<div class="title">Your product campaign is stop!</div>
+										<p class="time">5:45AM - 25/05/2023</p>
+										<p class="message">Please submit your quarterly report before Jun 15.</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon fx-success">
+										<i class="ri-check-double-line"></i>
+									</div>
+									<div class="detail">
+										<div class="title">Your payment is successfully processed</div>
+										<p class="time">9:20PM - 19/06/2023</p>
+										<p class="message">Check your account wallet. if there is any issue, create
+											support ticket.</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon fx-warn">
+										<i class="ri-error-warning-line"></i>
+									</div>
+									<div class="detail">
+										<div class="title">Budget threshold exceeded!</div>
+										<p class="time">4:15AM - 01/04/2023</p>
+										<p class="message">Budget threshold was exceeded for project "finx" B612
+											elements.</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon fx-warn">
+										<i class="ri-close-line"></i>
+									</div>
+									<div class="detail">
+										<div class="title">Project submission was decline!</div>
+										<p class="time">4:15AM - 01/04/2023</p>
+										<p class="message">Your project "B126" is declined by Theresa Mayeras.</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon fx-success">
+										<i class="ri-check-double-line"></i>
+									</div>
+									<div class="detail">
+										<div class="title">Your payment is successfully processed</div>
+										<p class="time">9:20PM - 19/06/2023</p>
+										<p class="message">Check your account wallet. if there is any issue, create
+											support ticket.</p>
+									</div>
+								</li>
+								<li class="check"><a class="fx-primary-btn" href="chatapp.html">View all</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+						<div class="fx-message-list">
+							<ul>
+								<li>
+									<a href="chatapp.html" class="reply">Reply</a>
+									<div class="user">
+										<img src="assets/img/user/9.jpg" alt="user">
+										<span class="label online"></span>
+									</div>
+									<div class="detail">
+										<a href="chatapp.html" class="name">Boris Whisli</a>
+										<p class="time">5:30AM, Today</p>
+										<p class="message">Hello, I am sending some file. Please use this in landing
+											page. And make sure this all files are comppress.</p>
+										<span class="download-files">
+											<span class="download">
+												<img src="assets/img/other/1.jpg" alt="image">
+												<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+											</span>
+											<span class="download">
+												<img src="assets/img/other/2.jpg" alt="image">
+												<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+											</span>
+											<span class="download">
+												<span class="file">
+													<i class="ri-file-ppt-line"></i>
+												</span>
+												<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+											</span>
+										</span>
+									</div>
+								</li>
+								<li>
+									<a href="chatapp.html" class="reply">Reply</a>
+									<div class="user">
+										<img src="assets/img/user/8.jpg" alt="user">
+										<span class="label offline"></span>
+									</div>
+									<div class="detail">
+										<a href="chatapp.html" class="name">Frank N. Stein</a>
+										<p class="time">8:30PM, 05/12/2023</p>
+										<p class="message">Please take a look on landing page. There is some bus to open
+											popup model. and save form data.</p>
+									</div>
+								</li>
+								<li>
+									<a href="chatapp.html" class="reply">Reply</a>
+									<div class="user">
+										<img src="assets/img/user/7.jpg" alt="user">
+										<span class="label busy"></span>
+									</div>
+									<div class="detail">
+										<a href="chatapp.html" class="name">Frank N. Stein</a>
+										<p class="time">8:30PM, 05/12/2023</p>
+										<p class="message">Please take a look on landing page. There is some bus to open
+											popup model. and save form data.</p>
+										<span class="download-files">
+											<span class="download">
+												<span class="file">
+													<i class="ri-file-zip-line"></i>
+												</span>
+												<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+											</span>
+											<span class="download">
+												<span class="file">
+													<i class="ri-file-text-line"></i>
+												</span>
+												<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+											</span>
+											<span class="download">
+												<span class="file">
+													<i class="ri-file-ppt-line"></i>
+												</span>
+												<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+											</span>
+										</span>
+									</div>
+								</li>
+								<li>
+									<a href="chatapp.html" class="reply">Reply</a>
+									<div class="user">
+										<img src="assets/img/user/6.jpg" alt="user">
+										<span class="label busy"></span>
+									</div>
+									<div class="detail">
+										<a href="chatapp.html" class="name">Paige Turner</a>
+										<p class="time">4:30PM, 12/12/2023</p>
+										<p class="message">Landing page issues are done. and now i am working on admin
+											user module.</p>
+									</div>
+								</li>
+								<li>
+									<a href="chatapp.html" class="reply">Reply</a>
+									<div class="user">
+										<img src="assets/img/user/5.jpg" alt="user">
+										<span class="label busy"></span>
+									</div>
+									<div class="detail">
+										<a href="chatapp.html" class="name">Allie Grater</a>
+										<p class="time">8:30PM, 05/12/2023</p>
+										<p class="message">Take marketing module task.</p>
+									</div>
+								</li>
+								<li class="check"><a class="fx-primary-btn" href="chatapp.html">View all</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="log" role="tabpanel" aria-labelledby="log-tab">
+						<div class="fx-activity-list activity-list">
+							<ul>
+								<li>
+									<span class="date-time">8 Thu<span class="time">11:30 AM - 05:10 PM
+										</span></span>
+									<p class="title">Project Submitted from Smith</p>
+									<p class="detail">Lorem Ipsum is simply dummy text of the printing and
+										lorem is typesetting industry.</p>
+									<span class="download-files">
+										<span class="download">
+											<img src="assets/img/other/1.jpg" alt="image">
+											<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+										</span>
+										<span class="download">
+											<img src="assets/img/other/2.jpg" alt="image">
+											<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+										</span>
+										<span class="download">
+											<span class="file">
+												<i class="ri-file-ppt-line"></i>
+											</span>
+											<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+										</span>
+									</span>
+								</li>
+								<li>
+									<span class="date-time warn">7 Wed<span class="time">1:30 PM - 02:30 PM
+										</span></span>
+									<p class="title">Morgus pvt - project due</p>
+									<p class="detail">Project modul delay for some bugs.</p>
+									<span class="download-files">
+										<span class="download">
+											<span class="file">
+												<i class="ri-file-zip-line"></i>
+											</span>
+											<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+										</span>
+										<span class="download">
+											<span class="file">
+												<i class="ri-file-text-line"></i>
+											</span>
+											<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+										</span>
+										<span class="download">
+											<img src="assets/img/other/3.jpg" alt="image">
+											<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+										</span>
+									</span>
+								</li>
+								<li>
+									<span class="date-time">6 Tue<span class="time">9:30 AM - 11:00 AM
+										</span></span>
+									<p class="title">Interview for management dept.</p>
+									<p class="detail">There are many variations of passages of Lorem Ipsum
+										available, but the majority have suffered alteration in some form,
+										by injected humour.</p>
+									<span class="download-files">
+										<span class="download">
+											<span class="file">
+												<i class="ri-file-zip-line"></i>
+											</span>
+											<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+										</span>
+										<span class="download">
+											<span class="file">
+												<i class="ri-file-text-line"></i>
+											</span>
+											<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+										</span>
+										<span class="download">
+											<span class="file">
+												<i class="ri-file-ppt-line"></i>
+											</span>
+											<a href="javascript:void(0)"><i class="ri-download-2-line"></i></a>
+										</span>
+									</span>
+								</li>
+								<li>
+									<span class="date-time">5 Mon<span class="time">3:30 AM - 4:00 PM
+										</span></span>
+									<p class="title">Meeting with mr. Ken doe</p>
+									<p class="detail">The majority have suffered alteration in some form,
+										by injected humour.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- main content -->
+		<div class="fx-main-content">
+			<div class="container-fluid">
+				<!-- Page title & breadcrumb -->
+				<div class="fx-page-title fx-page-title-2">
+					<div class="fx-breadcrumb">
+						<h5>최적화 진행 현황</h5>
+					</div>
+				</div>
+				<!-- ========================================================================================== -->
+				<div class="row">
+
+					<div class="col-md-12">
+						<div style="padding-bottom: 30px;">
+							<p>최적화 작업을 수행하고 있습니다. 작업이 완료되면 zip파일로 제공됩니다.</p>
+							<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+							</div>
+						</div>
+						<div class="fx-card card-default product-list">
+							<div class="fx-card-content ">
+								<div class="table-responsive">
+									<table id="product_list" class="table" style="width:100%">
+										<thead>
+											<tr>
+												<th>Product</th>
+												<th>Name</th>
+												<th>Price</th>
+												<th>Offer</th>
+												<th>Purchased</th>
+												<th>Stock</th>
+												<th>Status</th>
+												<th>Date</th>
+												<th>Action</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/1.jpg"
+														alt="Product Image"></td>
+												<td>Mens t-shirt</td>
+												<td>$20</td>
+												<td>25% OFF</td>
+												<td>61</td>
+												<td>5421</td>
+												<td><span class="active">active</span></td>
+												<td>05/11/2023</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/2.jpg"
+														alt="Product Image"></td>
+												<td>Sofa seat furniture</td>
+												<td>$400</td>
+												<td>30% OFF</td>
+												<td>80</td>
+												<td>25</td>
+												<td><span class="pending">pending</span></td>
+												<td>12/08/2022</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/3.jpg"
+														alt="Product Image"></td>
+												<td>Night lamp bedroom</td>
+												<td>$59</td>
+												<td>30% OFF</td>
+												<td>100</td>
+												<td>56</td>
+												<td><span class="disable">disable</span></td>
+												<td>25/05/2021</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/4.jpg"
+														alt="Product Image"></td>
+												<td>Round Cap hoodies</td>
+												<td>$10</td>
+												<td>30% OFF</td>
+												<td>250</td>
+												<td>568</td>
+												<td><span class="active">active</span></td>
+												<td>13/09/2019</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/5.jpg"
+														alt="Product Image"></td>
+												<td>Digital watch black</td>
+												<td>$582</td>
+												<td>30% OFF</td>
+												<td>220</td>
+												<td>264</td>
+												<td><span class="pending">pending</span></td>
+												<td>18/02/2023</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/6.jpg"
+														alt="Product Image"></td>
+												<td>Digital camera dslr</td>
+												<td>$1254</td>
+												<td>20% OFF</td>
+												<td>154</td>
+												<td>365</td>
+												<td><span class="disable">disable</span></td>
+												<td>16/11/2021</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/7.jpg"
+														alt="Product Image"></td>
+												<td>Headphone beater m3</td>
+												<td>$68</td>
+												<td>30% OFF</td>
+												<td>159</td>
+												<td>789</td>
+												<td><span class="active">active</span></td>
+												<td>23/04/2024</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/8.jpg"
+														alt="Product Image"></td>
+												<td>Camera dron fly b2</td>
+												<td>$120</td>
+												<td>80% OFF</td>
+												<td>12</td>
+												<td>325</td>
+												<td><span class="active">active</span></td>
+												<td>21/06/2023</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/9.jpg"
+														alt="Product Image"></td>
+												<td>Drill machine dregon g1</td>
+												<td>$20</td>
+												<td>10% OFF</td>
+												<td>254</td>
+												<td>36</td>
+												<td><span class="pending">pending</span></td>
+												<td>12/12/2022</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/10.jpg"
+														alt="Product Image"></td>
+												<td>Fly cry dron camera</td>
+												<td>$548</td>
+												<td>50% OFF</td>
+												<td>25</td>
+												<td>12</td>
+												<td><span class="disable">disable</span></td>
+												<td>12/05/2023</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/5.jpg"
+														alt="Product Image"></td>
+												<td>Black watches s20</td>
+												<td>$254</td>
+												<td>30% OFF</td>
+												<td>65</td>
+												<td>12</td>
+												<td><span class="active">active</span></td>
+												<td>15/06/2012</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/6.jpg"
+														alt="Product Image"></td>
+												<td>Dslr digital camera</td>
+												<td>$325</td>
+												<td>40% OFF</td>
+												<td>265</td>
+												<td>21</td>
+												<td><span class="active">active</span></td>
+												<td>25/04/2019</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/7.jpg"
+														alt="Product Image"></td>
+												<td>Headphone drag g9</td>
+												<td>$65</td>
+												<td>40% OFF</td>
+												<td>487</td>
+												<td>35</td>
+												<td><span class="disable">disable</span></td>
+												<td>25/08/2022</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/8.jpg"
+														alt="Product Image"></td>
+												<td>Orbite dron ss2</td>
+												<td>$754</td>
+												<td>40% OFF</td>
+												<td>12</td>
+												<td>48</td>
+												<td><span class="active">active</span></td>
+												<td>15/06/2015</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><img class="tbl-thumb" src="assets/img/product/9.jpg"
+														alt="Product Image"></td>
+												<td>Drill machine br6</td>
+												<td>$548</td>
+												<td>30% OFF</td>
+												<td>250</td>
+												<td>84</td>
+												<td><span class="active">active</span></td>
+												<td>16/11/2023</td>
+												<td>
+													<div class="d-flex justify-content-center">
+														<button type="button"
+															class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+															data-bs-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false" data-display="static">
+															<span class="sr-only"><i
+																	class="ri-settings-3-line"></i></span>
+														</button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">Edit</a>
+															<a class="dropdown-item" href="#">Delete</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<!-- ========================================================================================== -->
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container-fluid">
+				<div class="copyright">
+					<p><span id="copyright_year"></span> © WELLCONN, All rights Reserved.</p>
+					<p></p>
+				</div>
+			</div>
+		</footer>
+
+	</main>
+
+	<!-- Vendor Custom -->
+	<script src="assets/js/vendor/jquery-3.6.4.min.js"></script>
+	<script src="assets/js/vendor/simplebar.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/vendor/apexcharts.min.js"></script>
+	<script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+	<!-- Data Tables -->
+	<script src='assets/js/vendor/jquery.datatables.min.js'></script>
+	<script src='assets/js/vendor/datatables.bootstrap5.min.js'></script>
+	<script src='assets/js/vendor/datatables.responsive.min.js'></script>
+	<!-- Caleddar -->
+	<script src="assets/js/vendor/jquery.simple-calendar.js"></script>
+	<!-- Date Range Picker -->
+	<script src="assets/js/vendor/moment.min.js"></script>
+	<script src="assets/js/vendor/daterangepicker.js"></script>
+	<script src="assets/js/vendor/date-range.js"></script>
+
+	<!-- Main Custom -->
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
