@@ -31,6 +31,22 @@
 	<link id="mainCss" href="assets/css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/dark.css" id="dark">
 
+	<style>
+		body {
+	background-image: url('assets/img/bg/bg.jpg');
+	background-size: cover;        /* 이미지가 전체 영역을 덮도록 설정 */
+	background-position: center;   /* 이미지 중앙 배치 */
+	background-repeat: no-repeat;  /* 이미지 반복 방지 */
+	}
+	.intro-container {background: url('assets/img/bg/intro.png') no-repeat calc(100% - 50px) center; padding: 30px; backdrop-filter: blur(10px); border-radius: 5px; border: 1px solid rgba(255,255,255,0.1); min-height: 360px; margin: 0px 0px 0px 10px; width: calc(100% - 20px);}
+	.text-container {position:absolute; top:50%; left: 30px; transform:translate(0%, -50%); }
+	.text-container p {margin: 0px 0px 10px; line-height: 1em;}
+	.text-container p:nth-child(1) {font-weight: bold; font-size: 18px; margin-bottom: 30px;}
+	.text-container p:nth-child(2) { font-size: 30px;}
+	.text-container p:nth-child(3) {font-weight: bold; font-size: 30px; margin-bottom: 30px;}
+	.text-container button {font-size: 18px; width: 200px; height: 40px;}
+	</style>
+
 </head>
 
 <body data-fx-mode="dark">
@@ -400,14 +416,18 @@
 		<!-- main content -->
 		<div class="fx-main-content">
 			<div class="container-fluid">
-				<!-- Page title & breadcrumb -->
-				<div class="fx-page-title fx-page-title-2">
-					<div class="fx-breadcrumb">
-						<h5>메뉴 이름</h5>
-					</div>
-				</div>
 				<!-- ====================================================================================================-->
 				<div class="row">
+					<div class="intro-container">
+						<div class="text-container">
+							<p>OPTIMIZER PC VERSION</p>
+							<p>이미지/동영상/텍스트/폰트</p>
+							<p>파일 최적화하기</p>
+							<p><button class="fx-btn default-btn color-primary btn-lg">최적화 시작</button></p>
+						</div>
+
+
+					</div>
 				</div>
 				<!-- ====================================================================================================-->
 			</div>
